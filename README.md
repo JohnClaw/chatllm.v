@@ -21,6 +21,8 @@ You can also convert a custom model to int8 using this script: https://github.co
 
 
 python convert.py -i path/to/model -t q8_0 -o quantized.bin
+
+
 After downloading some model you should put it's file to the same folder where main.exe, libchatllm.dll and ggml.dll are.
 Then you can start chat app by executing this command via cmd or via .bat file: main.exe  -m gemma2-2b.bin
 Here's a screenshot of V-lang compiled main.exe answering my question:
