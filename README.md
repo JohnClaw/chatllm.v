@@ -13,9 +13,13 @@ To chat with main.exe you should download some ai model.
 For example, qwen 2.5 1.5b: https://modelscope.cn/api/v1/models/judd2024/chatllm_quantized_qwen2.5/repo?Revision=master&FilePath=qwen2.5-1.5b.bin
 Or another one: https://modelscope.cn/api/v1/models/judd2024/chatllm_quantized_gemma2_2b/repo?Revision=master&FilePath=gemma2-2b.bin
 To download more models use this python script https://github.com/foldl/chatllm.cpp/blob/master/scripts/model_downloader.py as follows:
+
+
 python model_downloader.py
 
-You can also convert a custom model to int8 using this script: https://github.com/foldl/chatllm.cpp/blob/master/convert.py
+You can also convert a custom model to int8 using this script: https://github.com/foldl/chatllm.cpp/blob/master/convert.py as follows:
+
+
 python convert.py -i path/to/model -t q8_0 -o quantized.bin
 After downloading some model you should put it's file to the same folder where main.exe, libchatllm.dll and ggml.dll are.
 Then you can start chat app by executing this command via cmd or via .bat file: main.exe  -m gemma2-2b.bin
