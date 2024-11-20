@@ -12,6 +12,7 @@ For example, qwen 2.5 1.5b: https://modelscope.cn/api/v1/models/judd2024/chatllm
 Or another one: https://modelscope.cn/api/v1/models/judd2024/chatllm_quantized_gemma2_2b/repo?Revision=master&FilePath=gemma2-2b.bin
 To download more models use this python script https://github.com/foldl/chatllm.cpp/blob/master/scripts/model_downloader.py as follows:
 python model_downloader.py
+
 You can also convert a custom model to int8 using this script: https://github.com/foldl/chatllm.cpp/blob/master/convert.py
 python convert.py -i path/to/model -t q8_0 -o quantized.bin
 After downloading some model you should put it's file to the same folder where main.exe, libchatllm.dll and ggml.dll are.
